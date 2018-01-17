@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    overflow: hidden;
+    padding: .5em;
+}
+
+.header-mobile {
+    display: none;
+}
+
+.ui-menu 
+.ui-menu-parent 
+.ui-menu-child {
+    width: 17.5em !important;
+}
+
+/*home*/
+.table {
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    font-weight: 200 !important;
+}
+
+.table-title {
+    background-color: #6580A1;
+}
+
+.text-info {
+    font-size: 1em;
+}
+
+.table-subtitles {
+    border-bottom:1px solid rgba(101, 128, 161,0.3);
+    padding: 0 !important;
+    word-wrap: break-word;
+}
+.table-subtitles > div {
+    word-wrap: break-word;
+}
+
+.table-response > div{
+    font-size: 2em;  
+}
+
+.table-personalizada {
+    margin: 0 auto !important;
+}
+
+.table-personalizada .table-subtitles > div,
+.table-personalizada .table-response > div
+{
+    width: 20% !important;
+}
+
+.red-highlighter {
+    color: red;
+}
+
+@media screen and (max-width: 682px) {
+    .header-desktop {
+        display: none;
+    }
+    .header-mobile {
+        display: block;
+        overflow: hidden;
+        padding: 1em;
+    }
+    .menu-mobile .ui-panelmenu {
+        margin-top: 2em;
+    }
+    .btn-menu{
+        float: right;
+    }
+
+    .ui-sidebar .ui-sidebar-close {
+        color: #6580A1 !important;
+    }
+    .ui-sidebar .ui-sidebar-close span {
+        color: #6580A1 !important;
+    }
+
+    /*table*/
+    /* .table-subtitles {
+        flex-direction: column;
+    }
+    .table-response {
+        flex-direction: column;
+    }
+    .table-body {
+        display: flex;
+        flex-direction: column;
+    } */
+}

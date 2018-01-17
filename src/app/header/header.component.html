@@ -1,0 +1,12 @@
+<div class="header-desktop">
+  <p-menubar [model]="items">
+    <button pButton label="Sair" icon="fa-sign-out"></button>
+  </p-menubar>
+</div>
+<div class="header-mobile">
+    <p-sidebar [(visible)]="display" position="right">
+        <p-panelMenu [model]="items" class="menu-mobile"></p-panelMenu>
+    </p-sidebar>
+    <button type="text" (click)="display = true" 
+    pButton icon="fa fa-bars" class="btn-menu"></button>
+</div>
