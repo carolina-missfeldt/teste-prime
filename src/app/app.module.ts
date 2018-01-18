@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { PrimengModule } from './primeng/primeng.module';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { CardHomeComponent } from './card-home/card-home.component';
+import { CardCollComponent } from './card-home/card-coll/card-coll.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    CardHomeComponent,
+    CardCollComponent
   ],
   imports: [
     BrowserModule,
